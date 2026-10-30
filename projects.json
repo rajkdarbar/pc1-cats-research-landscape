@@ -1,33 +1,5 @@
 [
   {
-    "id": "instabeam",
-    "title": "InstaBeam: Instant Beaming into Immersive Viewing Environments",
-    "primaryWP": "3.3",
-    "fundingYear": 2023,
-    "fundingType": "pc1-full",
-    "hybridRelevance": "potential",
-    "researchFocus": "Instantly reconstructing and sharing physical environments with remote immersive users",
-    "collaboration": "Remote and co-located participants interacting across physical and virtual spaces",
-    "example": "",
-    "evaluation": "Technical feasibility emphasized; team-level collaboration measures not clearly specified",
-    "myResearch": "Potential infrastructure for my Hybrid Events in MR research",
-    "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Instant_Beaming_into_Immersive_Viewing_Environments.pdf"
-  },
-  {
-    "id": "transitions",
-    "title": "Keeping Together During Transitions Between Places When Collaborating in Social VR",
-    "primaryWP": "4.2",
-    "fundingYear": 2024,
-    "fundingType": "pc1-full",
-    "hybridRelevance": "strong",
-    "researchFocus": "Designing interaction techniques that maintain group cohesion, social presence, and collaborative awareness when moving between places in social VR.",
-    "collaboration": "Multiple VR users coordinate navigation and transitions between virtual locations while maintaining group awareness and ongoing collaboration.",
-    "example": "A group attending a virtual conference moves together from a presentation room to another venue without losing members or interrupting their shared activity.",
-    "evaluation": "Ethnographic studies and controlled experiments assessing group coordination, social presence, and continuity during transitions.",
-    "myResearch": "Strong connection to Hybrid Events in MR, particularly group navigation, socially plausible locomotion, and maintaining collaboration between remote VR and co-located AR participants. The distinction is that current proposal investigates groups entirely within social VR, whereas my research extends the problem to hybrid AR–VR participation.",
-    "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Keeping_collaboration_along_transitions_between_places_in_VR.pdf"
-  },
-  {
     "id": "coco-sp",
     "title": "Collaboration in Hybrid Environments: Co-Defining Collaborative Spatial Layouts",
     "primaryWP": "1.1",
@@ -98,20 +70,6 @@
     "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Conception_d_outils_pour_la_collaboration_lors_de_travaux_pratiques_en_realite_virtuelle.pdf"
   },
   {
-    "id": "public-spaces",
-    "title": "Remote Collaboration Strategies for Everyday Public Spaces",
-    "primaryWP": "2.1",
-    "fundingYear": 2024,
-    "fundingType": "pc1-full",
-    "hybridRelevance": "moderate",
-    "researchFocus": "Designing socially acceptable XR interaction techniques and adaptive virtual layouts for remote collaboration in public spaces.",
-    "collaboration": "Remote XR users collaborate while adapting their gestures, communication, and virtual layouts to public environments.",
-    "example": "",
-    "evaluation": "Prototype evaluations and laboratory studies examining interaction efficiency, collaborative effectiveness, participant placement, and social acceptability.",
-    "myResearch": "Moderate connection to Hybrid Events in MR, particularly remote participant positioning and socially appropriate collaborative interaction. However, the project focuses on remote users in separate public spaces rather than hybrid co-located and remote groups.",
-    "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Remote_Collaboration_Strategies_for_Everyday_Public_Spaces.pdf"
-  },
-  {
     "id": "immersive-performance",
     "title": "Collaborative Immersive Artistic Performances",
     "primaryWP": "1.3",
@@ -138,20 +96,6 @@
     "evaluation": "Controlled experiments measuring collaborative task performance, cognitive load, spatial awareness, and co-presence.",
     "myResearch": "Strong connection to Hybrid Events in MR, particularly shared viewpoints, spatial awareness, and coordinated collaboration between remote VR and co-located AR participants.",
     "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/PhyDiViews-Collaboration_in_Hybrid_Environments.pdf"
-  },
-  {
-    "id": "industrial-metaverse",
-    "title": "Exploring the Potential of the Industrial Metaverse in Systems Architecting: Hope Beyond the Hype?",
-    "primaryWP": "3.2",
-    "fundingYear": 2024,
-    "fundingType": "support",
-    "hybridRelevance": "moderate",
-    "researchFocus": "Designing adaptive 3D interfaces and shared virtual environments to support collaborative design of complex engineering systems.",
-    "collaboration": "Engineering experts from different disciplines jointly design and review complex systems using heterogeneous devices (VR, CAVE, desktop, interactive walls).",
-    "example": "Mechanical and manufacturing engineers collaboratively review an aircraft landing-gear design, using different visual representations to identify and resolve design issues.",
-    "evaluation": "Controlled experiments and real-world case studies assessing collaboration quality, supported by established collaborative-design evaluation frameworks.",
-    "myResearch": "Moderate connection to Hybrid Events in MR, particularly coordination, shared representations, and collaboration between remote and co-located participants using heterogeneous devices. However, the focus is industrial co-design rather than hybrid events.",
-    "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Exploring_the_potential_of_the_Industrial_Metaverse_in_Systems_Architecting.pdf"
   },
   {
     "id": "artistic-co-creation",
@@ -194,34 +138,6 @@
     "evaluation": "Controlled experiments assessing gesture recognition, movement characteristics, cooperative task success, and the effects of social touch with and without haptic feedback.",
     "myResearch": "Moderate connection to Hybrid Events in MR, particularly nonverbal intention communication and coordination between remote VR and co-located AR participants.",
     "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Cooperation_synchrone_basee_sur_l_intention_sociale_pour_la_manipulation_d_un_objet_virtuel.pdf"
-  },
-  {
-    "id": "copilot",
-    "title": "CoPilot: Analysis and Design of Interactions and Collaborations to Support Pedestrian Mobility",
-    "primaryWP": "2.1",
-    "fundingYear": 2024,
-    "fundingType": "pc1-full",
-    "hybridRelevance": "none",
-    "researchFocus": "Designing accessible interaction techniques to support pedestrian navigation through remote caregiver assistance.",
-    "collaboration": "A person with an intellectual disability and a remote caregiver coordinate to navigate safely to a destination.",
-    "example": "",
-    "evaluation": "User-centered evaluations using simulated pedestrian mobility scenarios to assess interaction and collaboration. Specific collaboration-quality metrics are not defined.",
-    "myResearch": "No direct connection to my Hybrid Events in MR research. However, CoPilot could still contribute to the broader PC1 synthesis of asymmetric collaboration and coordination between participants with different capabilities.",
-    "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/CoPilot_Analyse_et_conception_des_interactions_et_des_collaborations_necessaires_pour_assister_la_mobilite_pietonne.pdf"
-  },
-  {
-    "id": "joint-actions",
-    "title": "Joint Actions in Collaborative Digital Environments: Co-Gestures and Sense of Agency",
-    "primaryWP": "2.2",
-    "fundingYear": 2024,
-    "fundingType": "pc1-full",
-    "hybridRelevance": "moderate",
-    "researchFocus": "Investigating collaborative gestures and sense of agency during joint actions in multi-user digital environments.",
-    "collaboration": "Two users coordinate gestures to jointly manipulate digital objects (moving, zooming, merging, or passing objects).",
-    "example": "",
-    "evaluation": "Behavioral experiments assessing sense of agency during joint actions.",
-    "myResearch": "Moderate connection to joint object manipulation and shared control between remote VR and co-located AR participants in Hybrid MR.",
-    "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Joint_Actions_in_a_Collaborative_Digital_Environments_co-gestures_and_a_Sense_of_Agency.pdf"
   },
   {
     "id": "kinaesthetic",
