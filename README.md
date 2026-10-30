@@ -1,44 +1,48 @@
-# PC1 CATS — Research Landscape (Axis 1 starter)
+# PC1 CATS Research Landscape
 
-A small static GitHub Pages site. It displays only **Axis 1**, organized by **primary work package**, with compact project entries and expandable summaries. No search or filters and no research-progress status field.
+Static research-landscape website for GitHub Pages. This version intentionally maps **Axis 1 only**. The existing design, project cards, research-summary drawer, and automatic counts are preserved.
 
-## Updating content
+## Content updates
 
-All current project data is in `projects.json`. Each entry has:
+Edit **`projects.json`** to add or update projects. Each project uses:
 
-- `id`: unique slug (e.g. `new-project`)
-- `title`: full project title
-- `primaryWP`: `1.1`, `1.2`, or `1.3`
-- `fundingYear`: year/cohort, or `null` if uncertain
-- `fundingType`: `pc1-full`, `support`, or `pc5-full`
-- `hybridRelevance`: `strong`, `moderate`, `weak`, or `none`
-- `researchFocus`, `collaboration`, `example`, `evaluation`, `myResearch`: short summaries
-- `pdfUrl`: https link to original proposal (or empty string if unknown)
+| Field | Meaning |
+|---|---|
+| `id` | Unique URL-friendly identifier |
+| `title` | Full project title |
+| `primaryWP` | For this starter: `1.1`, `1.2` or `1.3` |
+| `fundingYear` | Funding cohort (numeric year), or `null` if unknown |
+| `fundingType` | `pc1-full` or `support` |
+| `hybridRelevance` | `strong`, `moderate`, `weak` or `none` |
+| `researchFocus` | Short research description |
+| `collaboration` | Collaborative interaction/task scenario |
+| `evaluation` | Proposal's evaluation plans (do not present planned work as findings) |
+| `myResearch` | Relationship to proposed Hybrid Events in Mixed Reality research |
+| `pdfUrl` | Original proposal's HTTPS URL; empty if unavailable |
+| `example` | Optional working note; currently stored but not displayed |
 
-The map and count update automatically as new Axis 1 entries are added. The other three axes are deliberately hidden for now.
+Each project's primary work package controls its location. **Project cards are sorted by funding year** (then alphabetically for ties). The total and funding-category counts are computed from the data on every load. The site currently displays only PC1 fully funded and PC1 support-grant projects with WP1.x; adding Axis 2–4 requires extending `app.js` and its axis/work-package configuration.
 
-## Updating the existing GitHub repository
-
-Copy **all seven files** from this folder into your existing local `pc1-cats-research-landscape` repository, replacing files of the same name. Then run:
-
-```bash
-git add .
-git commit -m "Simplify research landscape to Axis 1"
-git push
-```
-
-GitHub Pages will publish from the same `main` branch you've already configured. The live address will remain the same.
-
-## Local testing
-
-From the folder containing `index.html`:
+## Preview locally
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Open http://localhost:8000 . Opening `index.html` directly from Finder will not load JSON in most browsers.
+Open `http://localhost:8000/`. Do not open `index.html` directly from Finder: browsers commonly block local JSON fetching under `file://`.
 
-## A note on scope
+## Publish updates
 
-Data is preliminary and based on project proposals; evaluation summaries represent planned methods unless findings are explicitly documented. Full funding status and years should be checked before any official publication. The older six projects outside Axis 1 remain in your previous Git history / original ZIP and can be reintroduced later.
+Copy the files into your existing GitHub repository, then run:
+
+```bash
+git add index.html style.css app.js projects.json favicon.svg README.md
+git commit -m "Clean up research landscape code"
+git push
+```
+
+No new dependency or build step is needed. GitHub Pages serves `index.html` from the repository root.
+
+## Scope note
+
+This is preliminary mapping from research proposals, **not** an evidence-based synthesis of completed studies. Funding cohort, category, and PDF references should be verified before presenting the map as a definitive project inventory.

@@ -126,20 +126,6 @@
     "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Study_of_Haptic_Feedback_for_Promoting_Positive_Social_Interactions_in_Virtual_Reality.pdf"
   },
   {
-    "id": "avatouch",
-    "title": "AVATOUCH: Synchronous Cooperation Based on Social Intention for Virtual Object Manipulation",
-    "primaryWP": "1.2",
-    "fundingYear": 2024,
-    "fundingType": "pc5-full",
-    "hybridRelevance": "moderate",
-    "researchFocus": "Investigating how intentional gestures and social touch (haptic feedback) improve cooperation between remote users represented by avatars in immersive VR environments.",
-    "collaboration": "Two remote users in connected immersive rooms cooperate to manipulate virtual objects without verbal communication, relying on gestures and haptic cues.",
-    "example": "Person A moves a virtual glass toward Person B, who recognizes the intention and fills it using a virtual bottle.",
-    "evaluation": "Controlled experiments assessing gesture recognition, movement characteristics, cooperative task success, and the effects of social touch with and without haptic feedback.",
-    "myResearch": "Moderate connection to Hybrid Events in MR, particularly nonverbal intention communication and coordination between remote VR and co-located AR participants.",
-    "pdfUrl": "https://www.pepr-ensemble.fr/theses-en-cours/Cooperation_synchrone_basee_sur_l_intention_sociale_pour_la_manipulation_d_un_objet_virtuel.pdf"
-  },
-  {
     "id": "kinaesthetic",
     "title": "Learning Through Kinaesthetic Collaboration and Brain Synchrony",
     "primaryWP": "1.2",
