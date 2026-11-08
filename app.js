@@ -1,25 +1,40 @@
 /* PC1 CATS landscape — edit projects.json to add or update projects. */
 'use strict';
 
-const AXIS = {
-  id: '1',
-  title: 'Interaction devices & modalities',
-  subtitle: 'Heterogeneous collaboration spaces'
-};
-const WORK_PACKAGES = [
-  ['1.1', 'Shared spatial layouts and views'],
-  ['1.2', 'Multisensory collaboration'],
-  ['1.3', 'Collaborative interaction techniques']
+// Same original design, now populated from all four PC1 CATS axes.
+const AXES = [
+  {id: '1', title: 'Interaction devices & modalities', subtitle: 'Heterogeneous collaboration spaces', workPackages: [
+    ['1.1', 'Shared spatial layouts and views'],
+    ['1.2', 'Multisensory collaboration'],
+    ['1.3', 'Collaborative interaction techniques']
+  ]},
+  {id: '2', title: 'Diversity of users', subtitle: 'Collaboration spaces for all', workPackages: [
+    ['2.1', 'Diversity of users and social contexts'],
+    ['2.2', 'Embodiment, avatars and user control'],
+    ['2.3', 'Collaborative experience and evaluation']
+  ]},
+  {id: '3', title: 'Complex tasks & environments', subtitle: 'Collaboration in the large', workPackages: [
+    ['3.1', 'Collaborative analysis of large datasets'],
+    ['3.2', 'Complex collaborative tasks'],
+    ['3.3', 'Complex spatial hybrid environments']
+  ]},
+  {id: '4', title: 'Dynamic collaboration transitions', subtitle: 'Continuity across spaces and groups', workPackages: [
+    ['4.1', 'Transitions between collaboration spaces'],
+    ['4.2', 'Transitions between users and groups'],
+    ['4.3', 'Transitions across complex environments'],
+    ['4.4', 'Evaluation of collaboration transitions']
+  ]}
 ];
 const FUNDING = {
-  'pc1-full': 'PC1 fully funded',
-  'support': 'PC1 support grant'
+  'pc1-full': 'PC1 Fully Funded PhD',
+  'support': 'PC1 Support-Grant PhD',
+  'pc1-postdoc': 'PC1 Funded Postdoc',
+  'other-pc': 'Cross-PC (PC5-Funded) PhD'
 };
 const RELEVANCE = {
   strong: 'Strong',
   moderate: 'Moderate',
-  weak: 'Weak',
-  none: 'No direct link'
+  weak: 'Low'
 };
 
 const $ = id => document.getElementById(id);
@@ -33,17 +48,17 @@ let projects = [], current = null, lastFocus = null;
 
 function projectCard(p) {
   const card = node('article', 'project-card');
-  card.dataset.relevance = p.hybridRelevance || 'none';
+  card.dataset.relevance = p.hybridRelevance || 'weak';
 
   // Row 1: complete project title.
   card.append(node('h4', 'card-title', p.title));
 
   // Row 2: five items (year, funding, summary, PDF, relevance).
   const tags = node('div', 'card-tags');
-  tags.append(node('span', 'year-tag', p.fundingYear ? String(p.fundingYear) : 'Year unverified'));
-  tags.append(node('span', 'funding ' + (p.fundingType || ''), FUNDING[p.fundingType] || 'Funding unverified'));
+  tags.append(node('span', 'year-tag', p.fundingYear ? String(p.fundingYear) : 'Year Unverified'));
+  tags.append(node('span', 'funding ' + (p.fundingType === 'pc1-full' ? '' : 'support'), FUNDING[p.fundingType] || 'Funding Unverified'));
 
-  const summary = node('button', 'card-link summary-link', 'Research summary ↗');
+  const summary = node('button', 'card-link summary-link', 'Research Summary ↗');
   summary.type = 'button';
   summary.setAttribute('aria-label', 'Open research summary: ' + p.title);
   summary.addEventListener('click', () => openProject(p.id));
@@ -57,13 +72,13 @@ function projectCard(p) {
     pdf.setAttribute('aria-label', 'Open original PDF: ' + p.title);
     tags.append(pdf);
   } else {
-    tags.append(node('span', 'card-link unavailable-pdf', 'PDF unavailable'));
+    tags.append(node('span', 'card-link unavailable-pdf', 'PDF Unavailable'));
   }
 
-  const relevanceKey = RELEVANCE[p.hybridRelevance] ? p.hybridRelevance : 'none';
+  const relevanceKey = RELEVANCE[p.hybridRelevance] ? p.hybridRelevance : 'weak';
   const relevance = node('span', 'relevance-tag ' + relevanceKey);
   relevance.append(node('i', 'dot ' + relevanceKey));
-  relevance.append(node('span', '', 'Relevance to my research: ' + RELEVANCE[relevanceKey]));
+  relevance.append(node('span', '', 'Relevance to Proposed Research: ' + RELEVANCE[relevanceKey]));
   tags.append(relevance);
   card.append(tags);
   return card;
@@ -72,40 +87,44 @@ function projectCard(p) {
 function render() {
   const area = $('landscape');
   area.replaceChildren();
-  const grouped = projects.filter(p => String(p.primaryWP || '').startsWith('1.'));
 
-  const axis = node('details', 'axis');
-  axis.open = true;
-  const header = node('summary');
-  header.append(node('span', 'axis-number', '1'));
-  const axisText = node('span', 'axis-text');
-  axisText.append(node('strong', '', AXIS.title), node('small', '', AXIS.subtitle));
-  header.append(axisText,
-    node('span', 'axis-count', `${grouped.length} project${grouped.length === 1 ? '' : 's'}`),
-    node('span', 'axis-chevron', '⌄'));
-  axis.append(header);
+  // Reuse the existing axis, work-package, and project-card components unchanged.
+  for (const config of AXES) {
+    const grouped = projects.filter(p => String(p.primaryWP || '').startsWith(config.id + '.'));
+    if (!grouped.length) continue;
 
-  const list = node('div', 'wp-list');
-  for (const [wp, label] of WORK_PACKAGES) {
-    const group = grouped.filter(p => p.primaryWP === wp);
-    if (!group.length) continue;
-    const section = node('section', 'wp');
-    const heading = node('div', 'wp-head');
-    heading.append(node('span', 'wp-num', 'WP' + wp), node('h3', '', label),
-      node('span', 'wp-count', `${group.length} project${group.length === 1 ? '' : 's'}`));
-    section.append(heading);
-    const cards = node('div', 'cards');
-    // Chronological order within each work package; unknown years appear last.
-    group.sort((a, b) => {
-      const yearOf = project => project.fundingYear && Number.isFinite(Number(project.fundingYear))
-        ? Number(project.fundingYear) : Infinity;
-      return yearOf(a) - yearOf(b) || a.title.localeCompare(b.title);
-    }).forEach(p => cards.append(projectCard(p)));
-    section.append(cards);
-    list.append(section);
+    const axis = node('details', 'axis');
+    axis.open = true;
+    const header = node('summary');
+    header.append(node('span', 'axis-number', config.id));
+    const axisText = node('span', 'axis-text');
+    axisText.append(node('strong', '', config.title), node('small', '', config.subtitle));
+    header.append(axisText,
+      node('span', 'axis-count', `${grouped.length} project${grouped.length === 1 ? '' : 's'}`),
+      node('span', 'axis-chevron', '⌄'));
+    axis.append(header);
+
+    const list = node('div', 'wp-list');
+    for (const [wp, label] of config.workPackages) {
+      const group = grouped.filter(p => p.primaryWP === wp);
+      if (!group.length) continue;
+      const section = node('section', 'wp');
+      const heading = node('div', 'wp-head');
+      heading.append(node('span', 'wp-num', 'WP' + wp), node('h3', '', label),
+        node('span', 'wp-count', `${group.length} project${group.length === 1 ? '' : 's'}`));
+      section.append(heading);
+      const cards = node('div', 'cards');
+      group.sort((a, b) => {
+        const yearOf = project => project.fundingYear && Number.isFinite(Number(project.fundingYear))
+          ? Number(project.fundingYear) : Infinity;
+        return yearOf(a) - yearOf(b) || a.title.localeCompare(b.title);
+      }).forEach(p => cards.append(projectCard(p)));
+      section.append(cards);
+      list.append(section);
+    }
+    axis.append(list);
+    area.append(axis);
   }
-  axis.append(list);
-  area.append(axis);
 }
 
 function detailSection(label, value) {
@@ -132,7 +151,7 @@ function openProject(id, fromHash = false) {
     ['Research focus', p.researchFocus],
     ['Collaboration', p.collaboration],
     ['Evaluation', p.evaluation],
-    ['Relationship to my proposed Hybrid MR research', p.myResearch]
+    ['Relevance to Proposed Research', p.myResearch]
   ]) {
     const section = detailSection(label, value);
     if (section) content.append(section);
@@ -187,12 +206,14 @@ async function init() {
     if (!response.ok) throw Error('Could not load projects.json');
     const raw = await response.json();
     if (!Array.isArray(raw)) throw Error('projects.json must contain an array');
-    // Current mapping is PC1 Axis 1, excluding projects fully funded by other PCs.
-    projects = raw.filter(p => String(p.primaryWP || '').startsWith('1.') &&
-      ['pc1-full', 'support'].includes(p.fundingType));
+    // Include all mapped PC1 CATS projects, with explicit labels for cross-PC funding and postdocs.
+    projects = raw.filter(p => AXES.some(axis => String(p.primaryWP || '').startsWith(axis.id + '.')) &&
+      ['pc1-full', 'support', 'other-pc', 'pc1-postdoc'].includes(p.fundingType));
     $('project-count').textContent = projects.length;
     $('pc1-full-count').textContent = projects.filter(p => p.fundingType === 'pc1-full').length;
     $('pc1-support-count').textContent = projects.filter(p => p.fundingType === 'support').length;
+    $('pc1-postdoc-count').textContent = projects.filter(p => p.fundingType === 'pc1-postdoc').length;
+    $('cross-pc-count').textContent = projects.filter(p => p.fundingType === 'other-pc').length;
     render();
     const id = decodeURIComponent(location.hash.slice(1));
     if (id) openProject(id, true);

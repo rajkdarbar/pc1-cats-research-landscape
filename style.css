@@ -147,29 +147,31 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: #53637a;
+  color: #34445c;
   font-size: 12px;
+  font-weight: 700;
   white-space: nowrap;
 }
 
 .dot {
   display: inline-block;
-  width: 9px;
-  height: 9px;
+  width: 12px;
+  height: 12px;
   flex: none;
   border-radius: 50%;
 }
 
+/* Vivid, distinct colors for the three relevance levels. */
 .dot.strong {
-  background: #dc7556;
+  background: #d83a28;
 }
 
 .dot.moderate {
-  background: #528bbc;
+  background: #146fc8;
 }
 
 .dot.weak {
-  background: #bb9966;
+  background: #f4b400;
 }
 
 .dot.none {
@@ -206,16 +208,16 @@ summary:focus-visible {
 }
 
 .funding-breakdown {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
   width: 100%;
   border-top: 1px solid var(--hair);
-  padding-top: 15px;
+  padding-top: 12px;
+  row-gap: 0;
 }
 
 .funding-stat {
-  flex: 1;
   min-width: 0;
   padding: 0 10px;
   display: flex;
@@ -226,8 +228,14 @@ summary:focus-visible {
   text-align: center;
 }
 
-.funding-stat+.funding-stat {
+.funding-stat:nth-child(even) {
   border-left: 1px solid var(--hair);
+}
+
+.funding-stat:nth-child(n+3) {
+  border-top: 1px solid var(--hair);
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .funding-stat strong {
@@ -490,24 +498,38 @@ button.card-link {
   background: #f1f3f7;
 }
 
+.relevance-tag {
+  font-weight: 700;
+}
+
 .relevance-tag .dot {
   width: 8px;
   height: 8px;
 }
 
+/* Solid badge backgrounds make classifications unmistakable on the white cards. */
 .relevance-tag.strong {
-  color: #ad4e37;
-  background: #fff0e9;
+  color: #fff;
+  background: #d83a28;
 }
 
 .relevance-tag.moderate {
-  color: #386f9d;
-  background: #eaf4fc;
+  color: #fff;
+  background: #146fc8;
 }
 
 .relevance-tag.weak {
-  color: #906f3e;
-  background: #f9f1e5;
+  color: #28221a;
+  background: #f4b400;
+}
+
+.relevance-tag.strong .dot,
+.relevance-tag.moderate .dot {
+  background: #fff;
+}
+
+.relevance-tag.weak .dot {
+  background: #28221a;
 }
 
 .relevance-tag.none {
