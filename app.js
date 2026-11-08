@@ -116,10 +116,13 @@ function render() {
     for (const [wp, label] of config.workPackages) {
       const group = grouped.filter(p => p.primaryWP === wp);
       if (!group.length) continue;
-      const section = node('section', 'wp');
-      const heading = node('div', 'wp-head');
+      // Nested native disclosure: work packages start collapsed, like their parent axes.
+      const section = node('details', 'wp');
+      section.open = false;
+      const heading = node('summary', 'wp-head');
       heading.append(node('span', 'wp-num', 'WP' + wp), node('h3', '', label),
-        node('span', 'wp-count', `${group.length} project${group.length === 1 ? '' : 's'}`));
+        node('span', 'wp-count', `${group.length} project${group.length === 1 ? '' : 's'}`),
+        node('span', 'wp-chevron', '⌄'));
       section.append(heading);
       const cards = node('div', 'cards');
       group.sort((a, b) => {

@@ -357,7 +357,7 @@ summary:focus-visible {
 }
 
 /* Keep each research axis collapsed until its heading is clicked. */
-.axis:not([open])>.wp-list {
+.axis:not([open]) > .wp-list {
   display: none;
 }
 
@@ -460,19 +460,12 @@ summary:focus-visible {
   white-space: normal;
 }
 
-.year-tag {
+/* Funding type and funding year are neutral metadata: no hierarchy implied. */
+.year-tag,
+.funding,
+.funding.support {
   color: #657487;
   background: #f0f2f6;
-}
-
-.funding {
-  color: #386d62;
-  background: #e9f5f1;
-}
-
-.funding.support {
-  color: #69788a;
-  background: #f0f3f7;
 }
 
 .card-link {
@@ -824,4 +817,32 @@ button.card-link {
   .overview-cards {
     margin-top: 13px;
   }
+}
+
+/* Work packages behave as independent, collapsed-by-default accordions.
+   The native <details>/<summary> controls are keyboard accessible. */
+.wp > .wp-head {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.wp > .wp-head::-webkit-details-marker {
+  display: none;
+}
+.wp:not([open]) > .wp-head {
+  margin-bottom: 0;
+}
+.wp:not([open]) > .cards {
+  display: none;
+}
+.wp-chevron {
+  font-size: 19px;
+  font-weight: 400;
+  color: #9aa6b8;
+  line-height: 1;
+  transform: rotate(-90deg);
+  transition: transform .18s;
+}
+.wp[open] .wp-chevron {
+  transform: rotate(0deg);
 }
