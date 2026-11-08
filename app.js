@@ -3,27 +3,35 @@
 
 // Same original design, now populated from all four PC1 CATS axes.
 const AXES = [
-  {id: '1', title: 'Interaction devices & modalities', subtitle: 'Heterogeneous collaboration spaces', workPackages: [
-    ['1.1', 'Shared spatial layouts and views'],
-    ['1.2', 'Multisensory collaboration'],
-    ['1.3', 'Collaborative interaction techniques']
-  ]},
-  {id: '2', title: 'Diversity of users', subtitle: 'Collaboration spaces for all', workPackages: [
-    ['2.1', 'Diversity of users and social contexts'],
-    ['2.2', 'Embodiment, avatars and user control'],
-    ['2.3', 'Collaborative experience and evaluation']
-  ]},
-  {id: '3', title: 'Complex tasks & environments', subtitle: 'Collaboration in the large', workPackages: [
-    ['3.1', 'Collaborative analysis of large datasets'],
-    ['3.2', 'Complex collaborative tasks'],
-    ['3.3', 'Complex spatial hybrid environments']
-  ]},
-  {id: '4', title: 'Dynamic collaboration transitions', subtitle: 'Continuity across spaces and groups', workPackages: [
-    ['4.1', 'Transitions between collaboration spaces'],
-    ['4.2', 'Transitions between users and groups'],
-    ['4.3', 'Transitions across complex environments'],
-    ['4.4', 'Evaluation of collaboration transitions']
-  ]}
+  {
+    id: '1', title: 'Interaction devices & modalities', subtitle: 'Heterogeneous collaboration spaces', workPackages: [
+      ['1.1', 'Shared spatial layouts and views'],
+      ['1.2', 'Multisensory collaboration'],
+      ['1.3', 'Collaborative interaction techniques']
+    ]
+  },
+  {
+    id: '2', title: 'Diversity of users', subtitle: 'Collaboration spaces for all', workPackages: [
+      ['2.1', 'Diversity of users and social contexts'],
+      ['2.2', 'Embodiment, avatars and user control'],
+      ['2.3', 'Collaborative experience and evaluation']
+    ]
+  },
+  {
+    id: '3', title: 'Complex tasks & environments', subtitle: 'Collaboration in the large', workPackages: [
+      ['3.1', 'Collaborative analysis of large datasets'],
+      ['3.2', 'Complex collaborative tasks'],
+      ['3.3', 'Complex spatial hybrid environments']
+    ]
+  },
+  {
+    id: '4', title: 'Dynamic collaboration transitions', subtitle: 'Continuity across spaces and groups', workPackages: [
+      ['4.1', 'Transitions between collaboration spaces'],
+      ['4.2', 'Transitions between users and groups'],
+      ['4.3', 'Transitions across complex environments'],
+      ['4.4', 'Evaluation of collaboration transitions']
+    ]
+  }
 ];
 const FUNDING = {
   'pc1-full': 'PC1 Fully Funded PhD',
@@ -202,7 +210,7 @@ function initEvents() {
 async function init() {
   initEvents();
   try {
-    const response = await fetch('./projects.json', {cache: 'no-store'});
+    const response = await fetch('./projects.json', { cache: 'no-store' });
     if (!response.ok) throw Error('Could not load projects.json');
     const raw = await response.json();
     if (!Array.isArray(raw)) throw Error('projects.json must contain an array');
