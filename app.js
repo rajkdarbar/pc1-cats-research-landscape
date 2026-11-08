@@ -102,7 +102,7 @@ function render() {
     if (!grouped.length) continue;
 
     const axis = node('details', 'axis');
-    axis.open = true;
+    axis.open = false;
     const header = node('summary');
     header.append(node('span', 'axis-number', config.id));
     const axisText = node('span', 'axis-text');
