@@ -356,6 +356,11 @@ summary:focus-visible {
   transform: rotate(0);
 }
 
+/* Keep each research axis collapsed until its heading is clicked. */
+.axis:not([open])>.wp-list {
+  display: none;
+}
+
 .wp-list {
   display: grid;
   gap: 13px;
