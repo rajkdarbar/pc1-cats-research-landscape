@@ -1,0 +1,506 @@
+[
+  {
+    "id": "shared-layout",
+    "label": "Shared spatial layout design",
+    "definition": "Coordinating where shared digital content and workspace elements are placed.",
+    "inclusion_rule": "Include when collaborators jointly arrange or adapt spatial workspaces.",
+    "count": 2,
+    "axes_covered": 2,
+    "axis_counts": [
+      1,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "view-alignment",
+    "label": "Viewpoint and perspective alignment",
+    "definition": "Sharing or aligning what collaborators can see from different positions or displays.",
+    "inclusion_rule": "Include when 2D/3D views, perspectives or sight lines are coordinated.",
+    "count": 3,
+    "axes_covered": 2,
+    "axis_counts": [
+      2,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "spatial-annotations",
+    "label": "Spatial annotations and guidance cues",
+    "definition": "Using spatially anchored marks, gestures, or instructions to direct another person.",
+    "inclusion_rule": "Include when instructions or annotations are associated with places or objects.",
+    "count": 2,
+    "axes_covered": 2,
+    "axis_counts": [
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "scene-capture",
+    "label": "Physical-scene capture and sharing",
+    "definition": "Capturing and communicating a real environment to a remote immersive participant.",
+    "inclusion_rule": "Include when sharing physical surroundings is a primary technical aim.",
+    "count": 1,
+    "axes_covered": 1,
+    "axis_counts": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "digital-twin",
+    "label": "Collaborative digital-twin editing",
+    "definition": "Jointly editing or synchronizing digital replicas of physical sites or systems.",
+    "inclusion_rule": "Include when a digital twin is a shared object of collaborative editing.",
+    "count": 1,
+    "axes_covered": 1,
+    "axis_counts": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "shared-manipulation",
+    "label": "Shared object manipulation",
+    "definition": "Two or more people coordinate to move, modify, or control the same object.",
+    "inclusion_rule": "Include when shared object actions are a research focus.",
+    "count": 6,
+    "axes_covered": 2,
+    "axis_counts": [
+      5,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "tangible-interaction",
+    "label": "Tangible and hand-based input",
+    "definition": "Using physical objects or hand tracking as inputs during collaborative interaction.",
+    "inclusion_rule": "Include when hand/object interfaces mediate collaboration.",
+    "count": 2,
+    "axes_covered": 1,
+    "axis_counts": [
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "co-gesture-agency",
+    "label": "Co-gestures and shared agency",
+    "definition": "Coordinated gestures, joint agency, or intention in joint action.",
+    "inclusion_rule": "Include when participants intentionally couple their gestures or agency.",
+    "count": 3,
+    "axes_covered": 2,
+    "axis_counts": [
+      2,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "kinesthetic-guidance",
+    "label": "Kinesthetic guidance and co-manipulation",
+    "definition": "Using movement or force-based feedback for physically coupled cooperation or instruction.",
+    "inclusion_rule": "Include when the work investigates guided motion or force feedback.",
+    "count": 2,
+    "axes_covered": 1,
+    "axis_counts": [
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "haptic-communication",
+    "label": "Haptic social communication",
+    "definition": "Communicating social signals or interpersonal contact through touch or vibration.",
+    "inclusion_rule": "Include when haptics conveys social meaning, not merely tactile input.",
+    "count": 6,
+    "axes_covered": 1,
+    "axis_counts": [
+      6,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "sensory-asymmetry",
+    "label": "Asymmetric sensory feedback",
+    "definition": "Supporting collaborators who receive or generate different forms of sensory feedback.",
+    "inclusion_rule": "Include when asymmetry of sensory channels is explicitly investigated.",
+    "count": 2,
+    "axes_covered": 1,
+    "axis_counts": [
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "avatar-representation",
+    "label": "Avatar embodiment and representation",
+    "definition": "Representing a collaborator through an avatar, including control, ownership, or body cues.",
+    "inclusion_rule": "Include when avatar characteristics, embodiment or control matter to the study.",
+    "count": 2,
+    "axes_covered": 1,
+    "axis_counts": [
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "social-presence",
+    "label": "Social presence and co-presence",
+    "definition": "Investigating how people perceive and experience being together in mediated spaces.",
+    "inclusion_rule": "Include when social/co-presence is an explicit target or outcome.",
+    "count": 7,
+    "axes_covered": 3,
+    "axis_counts": [
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "nonverbal-cues",
+    "label": "Nonverbal social intent cues",
+    "definition": "Communicating intentions or states through gaze, gesture, body position, or facial signals.",
+    "inclusion_rule": "Include when such nonverbal cues are a design/evaluation focus.",
+    "count": 8,
+    "axes_covered": 2,
+    "axis_counts": [
+      3,
+      5,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "socio-emotional",
+    "label": "Socio-emotional awareness",
+    "definition": "Sharing, expressing, or regulating emotion and interpersonal states in a group.",
+    "inclusion_rule": "Include when emotion or socio-emotional group states are explicit.",
+    "count": 1,
+    "axes_covered": 1,
+    "axis_counts": [
+      0,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "workspace-awareness",
+    "label": "Awareness of collaborators’ work",
+    "definition": "Understanding others’ current activities, shared context or task states.",
+    "inclusion_rule": "Include when mutual task/workspace awareness is explicit.",
+    "count": 12,
+    "axes_covered": 4,
+    "axis_counts": [
+      6,
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "id": "group-coordination",
+    "label": "Group coordination and joint action",
+    "definition": "Coordinating participants’ contributions and actions toward a shared goal.",
+    "inclusion_rule": "Include when coordination itself is studied beyond simply having multiple users.",
+    "count": 14,
+    "axes_covered": 4,
+    "axis_counts": [
+      7,
+      5,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "group-transitions",
+    "label": "Group cohesion and membership transitions",
+    "definition": "Keeping a group together or handling changing group participation during transitions.",
+    "inclusion_rule": "Include when collaboration continuity, joining/leaving or group formation is central.",
+    "count": 1,
+    "axes_covered": 1,
+    "axis_counts": [
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "mobile-participation",
+    "label": "Mobile and on-the-go collaboration",
+    "definition": "Collaborating while one or more participants physically move or change locations.",
+    "inclusion_rule": "Include when mobility or movement constraints are a research focus.",
+    "count": 3,
+    "axes_covered": 3,
+    "axis_counts": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "remote-assistance",
+    "label": "Remote expert assistance",
+    "definition": "Guidance between a remote expert/mentor and an on-site operator or learner.",
+    "inclusion_rule": "Include when expert–novice or expert–operator assistance is explicit.",
+    "count": 7,
+    "axes_covered": 4,
+    "axis_counts": [
+      4,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "collaborative-learning",
+    "label": "Collaborative skill learning",
+    "definition": "Learning or training skills together using shared tasks, instruction, or guidance.",
+    "inclusion_rule": "Include when skill acquisition or educational collaboration is a goal.",
+    "count": 4,
+    "axes_covered": 2,
+    "axis_counts": [
+      3,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "accessibility",
+    "label": "Accessible and personalized participation",
+    "definition": "Adapting collaborative participation for different abilities or specific support needs.",
+    "inclusion_rule": "Include when accessibility or accommodation is an explicit goal.",
+    "count": 3,
+    "axes_covered": 2,
+    "axis_counts": [
+      1,
+      2,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "public-space",
+    "label": "Social acceptability in public spaces",
+    "definition": "Supporting collaboration while respecting the social norms and constraints of public settings.",
+    "inclusion_rule": "Include when public-space social acceptance or gestural restraint is studied.",
+    "count": 1,
+    "axes_covered": 1,
+    "axis_counts": [
+      0,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "creative-collaboration",
+    "label": "Collaborative art and performance",
+    "definition": "Co-producing artistic work or performances through immersive interaction.",
+    "inclusion_rule": "Include when collaboration produces or shapes artistic expression.",
+    "count": 4,
+    "axes_covered": 3,
+    "axis_counts": [
+      2,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "participatory-design",
+    "label": "Participatory co-creation and design",
+    "definition": "Multiple stakeholders co-design an artifact, exhibition, or experience.",
+    "inclusion_rule": "Include when participants jointly shape a designed outcome.",
+    "count": 4,
+    "axes_covered": 2,
+    "axis_counts": [
+      2,
+      0,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "complex-problems",
+    "label": "Complex engineering problem-solving",
+    "definition": "Collaborative exploration, review or design of technically complex systems.",
+    "inclusion_rule": "Include when joint technical problem-solving is the primary task.",
+    "count": 4,
+    "axes_covered": 2,
+    "axis_counts": [
+      2,
+      0,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "telehealth-therapy",
+    "label": "Collaborative therapy and telehealth",
+    "definition": "Mediated joint activities in clinical support, rehabilitation or mental-health contexts.",
+    "inclusion_rule": "Include when a therapeutic or clinical group activity is central.",
+    "count": 3,
+    "axes_covered": 2,
+    "axis_counts": [
+      1,
+      2,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "experience-evaluation",
+    "label": "Measuring collaborative experience",
+    "definition": "Operationalizing collaboration quality, interaction outcomes or group experience.",
+    "inclusion_rule": "Include only when measuring collaboration/experience is explicitly part of the study.",
+    "count": 6,
+    "axes_covered": 3,
+    "axis_counts": [
+      1,
+      4,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "adaptive-layouts",
+    "label": "Adaptive XR interfaces and layouts",
+    "definition": "Adapting presentation, control or interface arrangements to user or context.",
+    "inclusion_rule": "Include when adaptation/personalization of the interface is researched.",
+    "count": 4,
+    "axes_covered": 2,
+    "axis_counts": [
+      2,
+      2,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "action-recognition",
+    "label": "Activity and intent recognition",
+    "definition": "Inferring actions, intentions or coordination states from sensed participant behavior.",
+    "inclusion_rule": "Include when sensing-based recognition is a research objective.",
+    "count": 2,
+    "axes_covered": 2,
+    "axis_counts": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "generative-visuals",
+    "label": "AI-mediated visual modifications",
+    "definition": "Using generative AI to modify rendered physical environments or social cues.",
+    "inclusion_rule": "Include when AI-driven generation/modification of visuals is explicit.",
+    "count": 1,
+    "axes_covered": 1,
+    "axis_counts": [
+      0,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "neural-synchrony",
+    "label": "Neural and physiological coordination signals",
+    "definition": "Using brain/physiological measurements to study collaborative synchrony or alignment.",
+    "inclusion_rule": "Include when EEG/BCI or inter-brain measurements are an explicit method.",
+    "count": 2,
+    "axes_covered": 2,
+    "axis_counts": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "heterogeneous-devices",
+    "label": "Cross-device participation",
+    "definition": "Collaborators use materially different immersive, physical or screen-based devices.",
+    "inclusion_rule": "Include when device asymmetry is a substantive design variable.",
+    "count": 12,
+    "axes_covered": 2,
+    "axis_counts": [
+      9,
+      0,
+      3,
+      0
+    ]
+  },
+  {
+    "id": "physical-collaboration",
+    "label": "Physical collaboration at a distance",
+    "definition": "Enabling shared physical action, force or contact despite remote separation.",
+    "inclusion_rule": "Include when physical coupling across distance is a goal.",
+    "count": 2,
+    "axes_covered": 1,
+    "axis_counts": [
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "conversational-coordination",
+    "label": "Conversational communication and flow",
+    "definition": "Supporting timing, attention and communication continuity in live group talk.",
+    "inclusion_rule": "Include when conversation dynamics or speech-supported social interaction is studied.",
+    "count": 4,
+    "axes_covered": 2,
+    "axis_counts": [
+      3,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "data-synchronization",
+    "label": "Real-time synchronization and resilience",
+    "definition": "Keeping remote information, objects or interactions synchronized despite disruptions.",
+    "inclusion_rule": "Include when synchronization, latency or disrupted connectivity is explicit.",
+    "count": 2,
+    "axes_covered": 1,
+    "axis_counts": [
+      2,
+      0,
+      0,
+      0
+    ]
+  }
+]

@@ -260,7 +260,7 @@ summary:focus-visible {
 }
 
 .map-section {
-  border-top: 1px solid var(--hair);
+  border-top: 2px solid #c9d4e1;
   padding-top: 27px;
 }
 
@@ -357,7 +357,7 @@ summary:focus-visible {
 }
 
 /* Keep each research axis collapsed until its heading is clicked. */
-.axis:not([open]) > .wp-list {
+.axis:not([open])>.wp-list {
   display: none;
 }
 
@@ -620,7 +620,7 @@ button.card-link {
 .footer {
   margin-top: 27px;
   padding: 20px 0 42px;
-  border-top: 1px solid var(--hair);
+  border-top: 2px solid #c9d4e1;
   color: #8a97a7;
   font-size: 11px;
 }
@@ -821,20 +821,24 @@ button.card-link {
 
 /* Work packages behave as independent, collapsed-by-default accordions.
    The native <details>/<summary> controls are keyboard accessible. */
-.wp > .wp-head {
+.wp>.wp-head {
   cursor: pointer;
   list-style: none;
   user-select: none;
 }
-.wp > .wp-head::-webkit-details-marker {
+
+.wp>.wp-head::-webkit-details-marker {
   display: none;
 }
-.wp:not([open]) > .wp-head {
+
+.wp:not([open])>.wp-head {
   margin-bottom: 0;
 }
-.wp:not([open]) > .cards {
+
+.wp:not([open])>.cards {
   display: none;
 }
+
 .wp-chevron {
   font-size: 19px;
   font-weight: 400;
@@ -843,6 +847,7 @@ button.card-link {
   transform: rotate(-90deg);
   transition: transform .18s;
 }
+
 .wp[open] .wp-chevron {
   transform: rotate(0deg);
 }

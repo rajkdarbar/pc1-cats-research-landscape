@@ -1,0 +1,982 @@
+[
+  {
+    "project_id": "coco-sp",
+    "keywords": [
+      "distributed collaborators",
+      "shared spatial layouts",
+      "heterogeneous displays",
+      "joint arrangement",
+      "synchronized information"
+    ],
+    "topics": [
+      {
+        "topic_id": "shared-layout",
+        "reason": "Remote collaborators jointly arrange shared content across different physical and display spaces."
+      },
+      {
+        "topic_id": "view-alignment",
+        "reason": "The work studies compatible spatial layouts and views across heterogeneous displays."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Synchronized information and arranged content help collaborators maintain a common workspace."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "AR, VR, tabletops and large displays are explicitly part of the heterogeneous setting."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Participants coordinate decisions about where shared information should be placed."
+      }
+    ]
+  },
+  {
+    "project_id": "hybrid-tangibles",
+    "keywords": [
+      "remote VR expert",
+      "local AR operator",
+      "tangible interfaces",
+      "shared task context",
+      "unreliable communication"
+    ],
+    "topics": [
+      {
+        "topic_id": "tangible-interaction",
+        "reason": "The local AR operator uses tangible interfaces during work with a remote VR expert."
+      },
+      {
+        "topic_id": "remote-assistance",
+        "reason": "A remote VR expert helps an on-site AR operator carry out technical or medical procedures."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "The collaboration specifically connects on-site AR and remote VR roles."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "The researchers study sharing task context between remote expert and local operator."
+      },
+      {
+        "topic_id": "data-synchronization",
+        "reason": "Unreliable communication conditions are a stated design constraint for real-time assistance."
+      }
+    ]
+  },
+  {
+    "project_id": "digital-twins",
+    "keywords": [
+      "factory digital twin",
+      "joint editing",
+      "AR–VR synchronization",
+      "on-site and remote experts",
+      "industrial design"
+    ],
+    "topics": [
+      {
+        "topic_id": "digital-twin",
+        "reason": "Remote and on-site collaborators jointly edit a shared industrial digital twin."
+      },
+      {
+        "topic_id": "shared-manipulation",
+        "reason": "Participants jointly move or change machinery representations in a common 3D model."
+      },
+      {
+        "topic_id": "data-synchronization",
+        "reason": "Changes are synchronized between the virtual twin and the physical factory context."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "The workflow connects on-site AR operators with remote VR engineers."
+      },
+      {
+        "topic_id": "complex-problems",
+        "reason": "The joint editing task concerns technical planning for an industrial factory."
+      }
+    ]
+  },
+  {
+    "project_id": "thandgibles",
+    "keywords": [
+      "hand tracking",
+      "everyday physical objects",
+      "tangible manipulation",
+      "role handover",
+      "collaborator awareness"
+    ],
+    "topics": [
+      {
+        "topic_id": "tangible-interaction",
+        "reason": "Hand tracking turns everyday physical objects into collaborative tangible interfaces."
+      },
+      {
+        "topic_id": "shared-manipulation",
+        "reason": "Collaborators manipulate and exchange the same physical objects."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Exchanging objects also transfers associated digital information and collaborator activity cues."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Object handovers support coordination and role transfer during a shared task."
+      }
+    ]
+  },
+  {
+    "project_id": "vr-practicals",
+    "keywords": [
+      "practical VR learning",
+      "joint object manipulation",
+      "student coordination",
+      "shared task awareness",
+      "remote education"
+    ],
+    "topics": [
+      {
+        "topic_id": "collaborative-learning",
+        "reason": "The central scenario is students learning together in a shared VR practical session."
+      },
+      {
+        "topic_id": "shared-manipulation",
+        "reason": "Students jointly interact with virtual learning objects."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Shared task awareness is a stated requirement for learning activities."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Student action coordination is explicitly examined during joint practical work."
+      }
+    ]
+  },
+  {
+    "project_id": "immersive-performance",
+    "keywords": [
+      "artists and audiences",
+      "immersive performance",
+      "creative agency",
+      "asymmetric roles",
+      "co-presence"
+    ],
+    "topics": [
+      {
+        "topic_id": "creative-collaboration",
+        "reason": "Artists and audiences jointly shape an immersive artistic performance."
+      },
+      {
+        "topic_id": "participatory-design",
+        "reason": "Audience inputs contribute to co-producing the final artistic experience."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Different participant roles jointly influence the evolving performance."
+      },
+      {
+        "topic_id": "social-presence",
+        "reason": "Co-presence is a planned evaluation dimension in the artistic-performance setting."
+      }
+    ]
+  },
+  {
+    "project_id": "phidiviews",
+    "keywords": [
+      "shared viewpoints",
+      "2D–3D transitions",
+      "remote expert guidance",
+      "spatial annotations",
+      "mixed displays"
+    ],
+    "topics": [
+      {
+        "topic_id": "view-alignment",
+        "reason": "Sharing and transitioning between different 2D/3D viewpoints is its primary topic."
+      },
+      {
+        "topic_id": "spatial-annotations",
+        "reason": "Experts and on-site users exchange spatial annotations and position-related guidance."
+      },
+      {
+        "topic_id": "remote-assistance",
+        "reason": "A remote expert guides an on-site AR participant toward a needed viewpoint."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "The study explicitly spans AR, VR and desktop interfaces."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Viewpoint synchronization supports shared awareness of a common object of work."
+      }
+    ]
+  },
+  {
+    "project_id": "artistic-co-creation",
+    "keywords": [
+      "remote artists",
+      "music and dance",
+      "3D drawing",
+      "heterogeneous modalities",
+      "shared artwork"
+    ],
+    "topics": [
+      {
+        "topic_id": "creative-collaboration",
+        "reason": "Remote artists collaboratively create across music, dance and 3D drawing."
+      },
+      {
+        "topic_id": "participatory-design",
+        "reason": "Artists jointly contribute to the evolving artwork."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "Different artistic modalities are combined within one shared immersive activity."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "The different creative contributions are linked and coordinated in real time."
+      }
+    ]
+  },
+  {
+    "project_id": "social-haptics",
+    "keywords": [
+      "speech-synchronized vibration",
+      "social presence",
+      "haptic communication",
+      "persuasion",
+      "leadership"
+    ],
+    "topics": [
+      {
+        "topic_id": "haptic-communication",
+        "reason": "Speech-synchronized vibrations serve as social feedback during VR communication."
+      },
+      {
+        "topic_id": "social-presence",
+        "reason": "Effects on social presence are an explicit evaluation target."
+      },
+      {
+        "topic_id": "nonverbal-cues",
+        "reason": "Vibration supplements verbal speech with an additional interpersonal signal."
+      },
+      {
+        "topic_id": "conversational-coordination",
+        "reason": "The haptic feedback is synchronized with speech in social VR discussions."
+      }
+    ]
+  },
+  {
+    "project_id": "kinaesthetic",
+    "keywords": [
+      "movement guidance",
+      "shared motor learning",
+      "kinaesthetic feedback",
+      "brain synchrony",
+      "joint gesture execution"
+    ],
+    "topics": [
+      {
+        "topic_id": "kinesthetic-guidance",
+        "reason": "The project compares movement and force-based guidance during joint motor learning."
+      },
+      {
+        "topic_id": "collaborative-learning",
+        "reason": "Two participants learn motor skills through coordinated physical gestures."
+      },
+      {
+        "topic_id": "neural-synchrony",
+        "reason": "Inter-brain synchronization is studied with EEG during collaborative learning."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Coordinated joint movements are a central experimental mechanism."
+      }
+    ]
+  },
+  {
+    "project_id": "instabeam",
+    "keywords": [
+      "real-space capture",
+      "remote immersive viewers",
+      "physical environment sharing",
+      "cross-device representation",
+      "spatial context"
+    ],
+    "topics": [
+      {
+        "topic_id": "scene-capture",
+        "reason": "Rapid capture and remote presentation of real surroundings is its core technical aim."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "Physical sites are represented to people using different remote immersive devices."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Sharing spatial context can help a remote participant understand the real site."
+      }
+    ]
+  },
+  {
+    "project_id": "co-gestures",
+    "keywords": [
+      "co-gestures",
+      "joint manipulation",
+      "sense of agency",
+      "shared object control",
+      "synchronized movement"
+    ],
+    "topics": [
+      {
+        "topic_id": "co-gesture-agency",
+        "reason": "The project explicitly examines co-gestures and sense of agency in joint actions."
+      },
+      {
+        "topic_id": "shared-manipulation",
+        "reason": "Two collaborators jointly move, merge or pass digital objects."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Synchronized gestures are used to coordinate object actions."
+      },
+      {
+        "topic_id": "nonverbal-cues",
+        "reason": "Coordinated gestures convey action intentions between collaborators."
+      }
+    ]
+  },
+  {
+    "project_id": "copilot",
+    "keywords": [
+      "accessible navigation",
+      "remote caregiver",
+      "pedestrian mobility",
+      "guidance",
+      "intellectual disability"
+    ],
+    "topics": [
+      {
+        "topic_id": "accessibility",
+        "reason": "The system supports pedestrian mobility for people with intellectual disabilities."
+      },
+      {
+        "topic_id": "remote-assistance",
+        "reason": "A remote caregiver supports the person navigating toward a destination."
+      },
+      {
+        "topic_id": "mobile-participation",
+        "reason": "The shared assistance task occurs during physical pedestrian movement."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Caregiver and pedestrian coordinate decisions during travel."
+      }
+    ]
+  },
+  {
+    "project_id": "public-spaces",
+    "keywords": [
+      "public-space collaboration",
+      "remote XR participation",
+      "social acceptability",
+      "adaptive layouts",
+      "gestural restraint"
+    ],
+    "topics": [
+      {
+        "topic_id": "public-space",
+        "reason": "Social acceptability of XR collaboration in everyday public settings is central."
+      },
+      {
+        "topic_id": "adaptive-layouts",
+        "reason": "The research proposes adaptive virtual layouts for public environments."
+      },
+      {
+        "topic_id": "nonverbal-cues",
+        "reason": "Gestural restraint and socially suitable gestures are part of the interaction questions."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "The interaction design incorporates context and participant placement in public environments."
+      }
+    ]
+  },
+  {
+    "project_id": "keeping-together",
+    "keywords": [
+      "group movement",
+      "social VR transitions",
+      "cohesion",
+      "collaboration continuity",
+      "shared navigation"
+    ],
+    "topics": [
+      {
+        "topic_id": "group-transitions",
+        "reason": "Maintaining group cohesion through transitions between VR places is the central challenge."
+      },
+      {
+        "topic_id": "mobile-participation",
+        "reason": "Groups jointly navigate between virtual locations while maintaining activity continuity."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Users coordinate their movement to avoid separating during transitions."
+      },
+      {
+        "topic_id": "social-presence",
+        "reason": "Social presence during group transitions is a proposed evaluation outcome."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Participants need awareness of others and the ongoing shared activity during movement."
+      }
+    ]
+  },
+  {
+    "project_id": "avatouch",
+    "keywords": [
+      "nonverbal social intention",
+      "avatar touch",
+      "haptic feedback",
+      "cooperative object manipulation",
+      "shared task success"
+    ],
+    "topics": [
+      {
+        "topic_id": "haptic-communication",
+        "reason": "The system studies social-touch and haptic signals during remote virtual cooperation."
+      },
+      {
+        "topic_id": "co-gesture-agency",
+        "reason": "Intentional gestures are used to coordinate a cooperative action."
+      },
+      {
+        "topic_id": "shared-manipulation",
+        "reason": "Two remote participants cooperate to manipulate virtual objects."
+      },
+      {
+        "topic_id": "nonverbal-cues",
+        "reason": "The research emphasizes conveying social intentions without relying on speech."
+      }
+    ]
+  },
+  {
+    "project_id": "industrial-metaverse",
+    "keywords": [
+      "systems architecting",
+      "multidisciplinary experts",
+      "shared engineering review",
+      "heterogeneous displays",
+      "complex design"
+    ],
+    "topics": [
+      {
+        "topic_id": "complex-problems",
+        "reason": "Interdisciplinary engineering teams review and design complex systems."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "VR, CAVE, desktop and interactive-wall systems support one joint engineering task."
+      },
+      {
+        "topic_id": "shared-layout",
+        "reason": "Adaptive spatial interfaces display technical system information for shared review."
+      },
+      {
+        "topic_id": "participatory-design",
+        "reason": "Engineering experts jointly design a shared system architecture."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Shared 3D environments support awareness of other specialists’ design decisions."
+      }
+    ]
+  },
+  {
+    "project_id": "collective-intelligence",
+    "keywords": [
+      "group cognition",
+      "collective intelligence",
+      "verbal cues",
+      "nonverbal communication",
+      "collaborative learning"
+    ],
+    "topics": [
+      {
+        "topic_id": "group-coordination",
+        "reason": "The research studies how group processes shape collective intelligence in VR."
+      },
+      {
+        "topic_id": "nonverbal-cues",
+        "reason": "Verbal and nonverbal communication are explicit candidate mechanisms."
+      },
+      {
+        "topic_id": "conversational-coordination",
+        "reason": "The project examines verbal communication patterns during group tasks."
+      },
+      {
+        "topic_id": "experience-evaluation",
+        "reason": "The work investigates links between observed group behavior and collective performance."
+      }
+    ]
+  },
+  {
+    "project_id": "interpersonal-haptics",
+    "keywords": [
+      "avatar touch",
+      "multisensory feedback",
+      "VR training",
+      "emotional responses",
+      "co-presence"
+    ],
+    "topics": [
+      {
+        "topic_id": "haptic-communication",
+        "reason": "Simulated touch between avatars provides nonverbal interpersonal feedback."
+      },
+      {
+        "topic_id": "physical-collaboration",
+        "reason": "The system investigates representing remote interpersonal contact via haptics."
+      },
+      {
+        "topic_id": "social-presence",
+        "reason": "The project studies how simulated physical contact influences social experience."
+      }
+    ]
+  },
+  {
+    "project_id": "museoxr",
+    "keywords": [
+      "archaeological exhibit design",
+      "museum co-creation",
+      "curators and visitors",
+      "physical artefacts",
+      "participatory XR"
+    ],
+    "topics": [
+      {
+        "topic_id": "participatory-design",
+        "reason": "Museum professionals and audiences co-create archaeological exhibitions."
+      },
+      {
+        "topic_id": "creative-collaboration",
+        "reason": "The common task is collaboratively shaping an XR museum exhibit."
+      },
+      {
+        "topic_id": "experience-evaluation",
+        "reason": "The proposal includes evaluating collaborative co-creation and interaction."
+      }
+    ]
+  },
+  {
+    "project_id": "subtle-ar",
+    "keywords": [
+      "generative visual editing",
+      "face-to-face cues",
+      "real-time rendering",
+      "social perception",
+      "AR+AI"
+    ],
+    "topics": [
+      {
+        "topic_id": "generative-visuals",
+        "reason": "The primary technical aim is AI-generated subtle modifications of AR visual content."
+      },
+      {
+        "topic_id": "nonverbal-cues",
+        "reason": "Potentially modified signals include gaze, gesture and facial expression."
+      }
+    ]
+  },
+  {
+    "project_id": "space-medicine",
+    "keywords": [
+      "AR operator and VR expert",
+      "activity recognition",
+      "situational awareness",
+      "adaptive assistance",
+      "isolated environment"
+    ],
+    "topics": [
+      {
+        "topic_id": "action-recognition",
+        "reason": "The project builds AI-based models of actions performed by a remote AR operator."
+      },
+      {
+        "topic_id": "remote-assistance",
+        "reason": "An AR operator and VR collaborator coordinate a complex medical or technical task."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "The collaborative setting connects an AR operator to a remote VR user."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Recognizing the local operator’s physical actions can inform a remote collaborator."
+      },
+      {
+        "topic_id": "complex-problems",
+        "reason": "The shared procedure is a complex domain-specific medical task."
+      }
+    ]
+  },
+  {
+    "project_id": "social-emotional-presence",
+    "keywords": [
+      "group emotion",
+      "tangible feedback",
+      "collective awareness",
+      "shared regulation",
+      "collaborative learning"
+    ],
+    "topics": [
+      {
+        "topic_id": "socio-emotional",
+        "reason": "The project focuses on making group emotional states and expressions perceivable."
+      },
+      {
+        "topic_id": "nonverbal-cues",
+        "reason": "Nonverbal emotional expression is an explicit research variable."
+      },
+      {
+        "topic_id": "social-presence",
+        "reason": "The research explores mediated socio-emotional presence in group settings."
+      },
+      {
+        "topic_id": "experience-evaluation",
+        "reason": "The proposal studies how socio-emotional cues affect collaborative experience."
+      }
+    ]
+  },
+  {
+    "project_id": "sensory-asymmetry",
+    "keywords": [
+      "VR–desktop design",
+      "vibrotactile authoring",
+      "asymmetric workflow",
+      "shared parameters",
+      "coordination"
+    ],
+    "topics": [
+      {
+        "topic_id": "sensory-asymmetry",
+        "reason": "Differences in vibrotactile and pseudo-haptic feedback between users are central."
+      },
+      {
+        "topic_id": "haptic-communication",
+        "reason": "The shared sensory design task uses vibrotactile and pseudo-haptic channels."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "The researchers contrast different sensory capabilities across MR participants."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Collaborators must negotiate sensory design despite unequal feedback."
+      }
+    ]
+  },
+  {
+    "project_id": "physical-therapy",
+    "keywords": [
+      "remote physiotherapy",
+      "AR patient",
+      "VR therapist",
+      "movement coaching",
+      "rehabilitation"
+    ],
+    "topics": [
+      {
+        "topic_id": "telehealth-therapy",
+        "reason": "Remote physiotherapy and rehabilitation are the application context."
+      },
+      {
+        "topic_id": "remote-assistance",
+        "reason": "A remote physiotherapist guides an on-site patient through exercises."
+      },
+      {
+        "topic_id": "avatar-representation",
+        "reason": "User representation in asymmetric AR–VR exercise collaboration is studied."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "The therapist and patient use different AR/VR participation setups."
+      },
+      {
+        "topic_id": "accessibility",
+        "reason": "The interaction is designed around rehabilitation and patient support needs."
+      }
+    ]
+  },
+  {
+    "project_id": "workspace-bci",
+    "keywords": [
+      "brain–computer interface",
+      "team misalignment",
+      "shared awareness",
+      "loose–tight coupling",
+      "neurofeedback"
+    ],
+    "topics": [
+      {
+        "topic_id": "neural-synchrony",
+        "reason": "Passive EEG/BCI signals are studied for coordination and mutual misunderstanding."
+      },
+      {
+        "topic_id": "experience-evaluation",
+        "reason": "The research proposes physiological markers of group alignment and misalignment."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "The targeted phenomena concern collaborators’ awareness of one another’s work."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Coordinated and misaligned team states are explicit study targets."
+      },
+      {
+        "topic_id": "action-recognition",
+        "reason": "The system attempts to detect group coordination states from sensed neural activity."
+      }
+    ]
+  },
+  {
+    "project_id": "parmi",
+    "keywords": [
+      "accessible musical XR",
+      "therapist–child collaboration",
+      "personalized instruments",
+      "autistic children",
+      "joint music-making"
+    ],
+    "topics": [
+      {
+        "topic_id": "accessibility",
+        "reason": "Personalized XR music tools are designed for autistic children and therapists."
+      },
+      {
+        "topic_id": "telehealth-therapy",
+        "reason": "The collaborative music sessions form part of a therapeutic activity."
+      },
+      {
+        "topic_id": "creative-collaboration",
+        "reason": "Therapist and child make music together with XR instruments."
+      },
+      {
+        "topic_id": "adaptive-layouts",
+        "reason": "Accessible instruments adapt to different users’ capabilities and needs."
+      }
+    ]
+  },
+  {
+    "project_id": "factory-alternatives",
+    "keywords": [
+      "industrial troubleshooting",
+      "remote VR expert",
+      "on-site AR operator",
+      "alternative solutions",
+      "physical feasibility"
+    ],
+    "topics": [
+      {
+        "topic_id": "complex-problems",
+        "reason": "A remote expert and on-site operator compare alternatives to industrial problems."
+      },
+      {
+        "topic_id": "remote-assistance",
+        "reason": "Experts support on-site problem-solving through asymmetric AR–VR collaboration."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "On-site and remote workers interact through different AR/VR setups."
+      },
+      {
+        "topic_id": "view-alignment",
+        "reason": "Participants need compatible spatial perspectives on proposed industrial solutions."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Alternative solutions are explored jointly by the remote and local collaborators."
+      }
+    ]
+  },
+  {
+    "project_id": "teleclinics",
+    "keywords": [
+      "group telehealth",
+      "clinical facilitation",
+      "collaborative activities",
+      "collective engagement",
+      "recurring VR sessions"
+    ],
+    "topics": [
+      {
+        "topic_id": "telehealth-therapy",
+        "reason": "Collective VR activities support preventive mental-health services."
+      },
+      {
+        "topic_id": "group-coordination",
+        "reason": "Participants engage in structured collective/group activities in teleclinics."
+      },
+      {
+        "topic_id": "experience-evaluation",
+        "reason": "The project proposes evaluating how collaboration affects the immersive clinical experience."
+      },
+      {
+        "topic_id": "social-presence",
+        "reason": "The research addresses people’s social experience in collective teleclinic sessions."
+      }
+    ]
+  },
+  {
+    "project_id": "persuasive-haptics",
+    "keywords": [
+      "social haptic cues",
+      "speech synchronization",
+      "co-presence",
+      "collective decision-making",
+      "conflict resolution"
+    ],
+    "topics": [
+      {
+        "topic_id": "haptic-communication",
+        "reason": "Designed haptic feedback accompanies interpersonal messages."
+      },
+      {
+        "topic_id": "conversational-coordination",
+        "reason": "Haptic cues augment verbal communication in MR social interaction."
+      },
+      {
+        "topic_id": "social-presence",
+        "reason": "The proposal examines effects on social presence in shared immersive settings."
+      },
+      {
+        "topic_id": "nonverbal-cues",
+        "reason": "Vibrations provide a nonverbal dimension to social communication."
+      }
+    ]
+  },
+  {
+    "project_id": "on-the-go",
+    "keywords": [
+      "mobile videoconferencing",
+      "interrupted participation",
+      "divided attention",
+      "shared awareness",
+      "micro-asynchrony"
+    ],
+    "topics": [
+      {
+        "topic_id": "mobile-participation",
+        "reason": "Collaborators participate in videoconferences while physically moving."
+      },
+      {
+        "topic_id": "conversational-coordination",
+        "reason": "Divided attention and interruptions affect ongoing calls during mobility."
+      },
+      {
+        "topic_id": "adaptive-layouts",
+        "reason": "The project investigates techniques for interaction under limited mobile screen space."
+      },
+      {
+        "topic_id": "experience-evaluation",
+        "reason": "Mobility-related interaction costs and collaboration quality are studied."
+      }
+    ]
+  },
+  {
+    "project_id": "ar-mentoring",
+    "keywords": [
+      "AR spatial instructions",
+      "remote mentoring",
+      "physical-world alignment",
+      "expert–trainee roles",
+      "asynchronous learning"
+    ],
+    "topics": [
+      {
+        "topic_id": "spatial-annotations",
+        "reason": "Remote experts author location-anchored gestural Points of Instruction."
+      },
+      {
+        "topic_id": "remote-assistance",
+        "reason": "Expert guidance is delivered to trainees through AR instructions."
+      },
+      {
+        "topic_id": "collaborative-learning",
+        "reason": "The aim is to help trainees acquire a skill from expert demonstrations."
+      },
+      {
+        "topic_id": "workspace-awareness",
+        "reason": "Spatially anchored instructions supply context about the trainee’s work environment."
+      }
+    ]
+  },
+  {
+    "project_id": "postdoc-co-embodiment",
+    "keywords": [
+      "co-embodiment",
+      "shared avatar control",
+      "kinesthetic guidance",
+      "expert–trainee learning",
+      "joint agency"
+    ],
+    "topics": [
+      {
+        "topic_id": "avatar-representation",
+        "reason": "Virtual co-embodiment is a central method for sharing a digital body."
+      },
+      {
+        "topic_id": "kinesthetic-guidance",
+        "reason": "Participants jointly guide motion through kinesthetic co-manipulation."
+      },
+      {
+        "topic_id": "shared-manipulation",
+        "reason": "Co-manipulation distributes physical or virtual control across two users."
+      },
+      {
+        "topic_id": "collaborative-learning",
+        "reason": "Technical skill learning and long-term retention are primary outcomes."
+      },
+      {
+        "topic_id": "co-gesture-agency",
+        "reason": "Shared and joint agency are explicit research variables in co-embodiment."
+      }
+    ]
+  },
+  {
+    "project_id": "postdoc-physical",
+    "keywords": [
+      "heterogeneous haptics",
+      "AI feedback adaptation",
+      "remote co-manipulation",
+      "physical workspace mismatch",
+      "visual–haptic consistency"
+    ],
+    "topics": [
+      {
+        "topic_id": "physical-collaboration",
+        "reason": "The project directly studies maintaining shared physical collaboration across distant VR spaces."
+      },
+      {
+        "topic_id": "haptic-communication",
+        "reason": "Haptic interfaces mediate remote physical interaction."
+      },
+      {
+        "topic_id": "sensory-asymmetry",
+        "reason": "Different physical environments and haptic capabilities require asymmetric feedback."
+      },
+      {
+        "topic_id": "adaptive-layouts",
+        "reason": "AI-based adaptation is considered to mediate heterogeneous physical setups."
+      },
+      {
+        "topic_id": "heterogeneous-devices",
+        "reason": "Collaborators use haptic equipment in different physical environments."
+      }
+    ]
+  }
+]

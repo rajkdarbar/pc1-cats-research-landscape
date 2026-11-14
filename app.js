@@ -104,7 +104,7 @@ function render() {
     const axis = node('details', 'axis');
     axis.open = false;
     const header = node('summary');
-    header.append(node('span', 'axis-number', config.id));
+    header.append(node('span', 'axis-number', 'A'+config.id));
     const axisText = node('span', 'axis-text');
     axisText.append(node('strong', '', config.title), node('small', '', config.subtitle));
     header.append(axisText,

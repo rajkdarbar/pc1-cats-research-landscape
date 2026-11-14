@@ -8,7 +8,9 @@
   <title>PC1 CATS Research Landscape</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="topic-nav.css">
   <script defer src="app.js"></script>
+  <script defer src="topic-nav.js"></script>
 </head>
 
 <body>
@@ -53,14 +55,79 @@
     <section class="map-section" aria-labelledby="map-heading">
       <div class="map-heading-row">
         <div>
-          <h2 id="map-heading">Thematic Map — Research Axes &amp; Primary Work Packages</h2>
+          <h2 id="map-heading">Research Projects by Axis and Work Package</h2>
+          <p class="tn-deck">Explore funded research projects organized by their primary PC1 research axis and work package.</p>
         </div>
       </div>
       <div class="landscape" id="landscape" aria-live="polite"></div>
       <div class="error-message" id="error-message" role="alert" hidden></div>
     </section>
-    <footer class="footer">Preliminary thematic mapping of project proposals—not verified findings. Relevance and primary work-package assignments are interpretive assessments.
+
+    <!-- Additive, proposal-level cross-axis navigation; original PC1 hierarchy above is unchanged. -->
+    <section class="tn-section" id="tn-navigator" aria-labelledby="tn-heading">
+      <h2 class="tn-heading" id="tn-heading">Thematic Navigation Map — Research Topics × Research Axes</h2>
+      <p class="tn-deck">Explore connections between projects through shared research topics and compare their distribution across the four PC1 research axes.</p>
+      <span class="tn-counts" id="tn-counts">Loading topic map…</span>
+      <p class="tn-error" id="tn-loader" role="status">Loading research topics…</p>
+      <div id="tn-contents" hidden>
+        <div class="tn-main">
+          <div class="tn-map-card">
+            <div class="tn-tools">
+              <input class="tn-search" id="tn-topic-search" type="search" aria-label="Search research topics" placeholder="Search research topics…">
+              <select class="tn-sort" id="tn-topic-sort" aria-label="Sort research topics">
+                <option value="cross">Most cross-axis first</option>
+                <option value="alphabetic">A–Z topics</option>
+              </select>
+            </div>
+            <div class="tn-map-caption">
+              <span class="tn-map-instructions">Click a topic name for all axes; click a cell for one axis.</span>
+              <span id="tn-topic-list-count" class="tn-topic-list-count"></span>
+            </div>
+            <div class="tn-heatmap-scroll" id="tn-heatmap-scroll" aria-label="Research topic by PC1 axis heatmap">
+              <div class="tn-heat-header" aria-hidden="true"><span>Research topic</span><span>A1</span><span>A2</span><span>A3</span><span>A4</span></div>
+              <div id="tn-heatmap-rows"></div>
+              <p class="tn-empty" id="tn-empty-search" hidden>No topics match this search.</p>
+            </div>
+            <div class="tn-map-footer">
+              <div class="tn-density-legend" aria-label="Color scale: project counts"><span>0</span><i class="tn-swatch tn-density-0"></i><i class="tn-swatch tn-density-1"></i><i
+                  class="tn-swatch tn-density-2"></i><i class="tn-swatch tn-density-3"></i><i class="tn-swatch tn-density-4"></i><i class="tn-swatch tn-density-5"></i><i
+                  class="tn-swatch tn-density-6"></i><span>6+ projects</span></div>
+              <button type="button" class="tn-small-action" id="tn-expand-heatmap" aria-expanded="false">Show full heatmap</button>
+            </div>
+          </div>
+          <aside class="tn-preview-card" id="tn-preview" aria-label="Selected research topic">
+            <p class="tn-eyebrow">Selection preview</p>
+            <h3 class="tn-preview-title" id="tn-selected-name"></h3>
+            <p class="tn-preview-desc" id="tn-selected-desc"></p>
+            <p class="tn-preview-scope" id="tn-selected-scope"></p>
+            <p class="tn-preview-count" id="tn-selected-count"></p>
+            <p class="tn-preview-meta" id="tn-selected-meta"></p>
+            <div id="tn-preview-bars" class="tn-preview-bars" aria-label="Project distribution across A1 to A4"></div>
+            <button id="tn-explore" class="tn-explore" type="button">Explore selected projects ↓</button>
+            <p class="tn-preview-tip" id="tn-selection-tip"></p>
+          </aside>
+        </div>
+        <section id="tn-project-explorer" class="tn-explorer" aria-labelledby="tn-detail-title" hidden>
+          <div class="tn-explorer-header">
+            <div>
+              <p class="tn-eyebrow">Detailed research exploration</p>
+              <h3 id="tn-detail-title" class="tn-explorer-title"></h3>
+            </div>
+            <button type="button" id="tn-close-explorer" class="tn-small-action" aria-label="Close detailed research explorer">Close ✕</button>
+          </div>
+          <p id="tn-detail-desc" class="tn-explorer-desc"></p>
+          <div id="tn-detail-axis-filters" class="tn-axis-choice-row" aria-label="Filter projects by PC1 axis"></div>
+          <p id="tn-detail-count" class="tn-explorer-stat"></p>
+          <div id="tn-detail-projects"></div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <strong>Note:</strong> This research landscape is based on funded project descriptions and preliminary thematic assessments, not verified research findings. It will be
+      refined through discussions with project researchers and analysis of their published results.
     </footer>
+
   </main>
 
   <!-- The summary drawer intentionally has no PDF button or repeated funding/relevance tags. -->
