@@ -183,11 +183,14 @@
           membership.get(tag.topic_id).push({ project: p, reason: tag.reason, keywords: row.keywords });
         }
       }
-      if (projects.length !== 34 || mapping.length !== 34) throw Error('Expected 34 mapped project descriptions');
+
+      if (projects.length !== mapping.length)
+        throw Error('Project and mapping counts do not match');
+
       const checked = sortTopics(topics);
       selected.topicId = (topics.find(t => t.id === 'group-coordination') || checked[0]).id;
       selected.axis = null;
-      $('tn-counts').textContent = `${topics.length} research topics · ${projects.length} projects · ${mapping.reduce((n, m) => n + m.topics.length, 0)} preliminary topic associations`;
+      $('tn-counts').textContent = `${topics.length} research topics · ${projects.length} projects`;
       $('tn-topic-search').addEventListener('input', e => { search = e.target.value; renderHeatmap(); });
       $('tn-topic-sort').addEventListener('change', e => { sortMode = e.target.value; renderHeatmap(); });
       $('tn-explore').addEventListener('click', () => {
